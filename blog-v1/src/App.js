@@ -1,10 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import GNB from './Components/GNB'
+import styled from 'styled-components';
+import RootPage from './Components/RootPage';
+const RootDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
 
 function App() {
   return (
-    <div></div>
+    <RootDiv>
+      <GNB />
+      <RootPage />
+    </RootDiv>
   );
 }
 
